@@ -1,0 +1,142 @@
+//rsest body
+@import '../css/extends/reset';
+
+/**************************************** start navbar *****************/
+@import '../css/extends/nav';
+/**************************************** end navbar *****************/
+
+
+
+
+
+
+/**************************************** start content *****************/
+.teachers{
+    padding:100px 0;
+    background:#eef1ef21;
+    overflow: hidden;
+    .head{
+        margin-bottom: 20px;
+        .info{
+            text-align: right;
+            @media(max-width:767px){
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .line{
+                width:60px;
+                height:2px;
+                margin-right: 10px;
+                background: #FF1949;
+                @media(max-width:767px){
+                    margin:auto
+                }
+                
+            }
+        }
+        .input{
+            margin-top:10px;
+            padding-left: 12px;
+            @media(max-width:767px){
+                padding: 0 15px;
+            }
+            input{
+                width:100%;
+                padding:9px;
+                border-radius:10px;
+                background: #fff;
+                border: 1.5px solid #eef5f9;
+                outline: none;
+                transition: all .3s ease-in-out;
+                &:focus{
+                    border: 1.5px solid #43454b;
+                }
+            }
+        }
+    }
+
+    .item{
+        text-align: center;
+        background: #fff;
+        padding:25px 25px 5px 25px;
+        margin:25px 15px 30px 15px;
+        transition: .4s;
+        &:hover{
+            box-shadow: 0 0 7px 2px #e2f4ff;
+            .item_body{
+                .social{
+                    display:flex;
+                }
+            }
+            
+        }
+        &:hover{
+            .item_body{
+                transform: translate(0, -20px);
+            }
+        }
+        .item_body{
+            transition: all .4s ease-in-out;
+            margin:0 auto;
+            .cont_img{
+                width:150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin:15px auto;
+                @media(max-width:992px){
+                    width:180px;
+                    height:180px;
+                }
+                img{
+                    width:100%;
+                    height: 100%;;
+                }
+            }
+            h2{
+                color:#07294D;
+            }
+            p{
+                color:#FF1949;
+            }
+            .social{
+                margin-top:20px;
+                padding:0;
+                display:flex;
+                display:none;
+                justify-content: space-between;
+                a{  
+                    display:inline-block;
+                    margin:0 10px;
+                    border-radius:50%;
+                    width:35px;
+                    height:35px;
+                    text-align-last: center;
+                    line-height: 37px;
+                    transition: all .5s ease-in-out;
+                    &:hover{
+                        background:#FF1949;
+                    }
+                    i{
+                        color:#fff;
+                    }
+                }
+                .face{
+                    background:#222;
+                }
+                .twitter{
+                    background:#1da1f2;
+                }
+                .linkd{
+                    background:#0077b5;
+                }
+            }
+        }
+    }
+}
+/**************************************** end content *****************/
+
+
+/**************************************** start footer *****************/
+@import '../css/extends/footer';
+/**************************************** end footer *****************/

@@ -1,0 +1,99 @@
+//rsest body
+@import '../css/extends/reset';
+
+/**************************************** start navbar *****************/
+@import '../css/extends/nav';
+/**************************************** end navbar *****************/
+
+
+
+
+
+
+
+/**************************************** start form *****************/
+.content{
+    padding:50px 0;
+    .title{
+        font-weight: bold;
+    }
+    .info{
+        margin-top:37px;
+        .item{
+            text-align: right;
+            border-bottom:1px solid #99999954;
+            margin:15px 0;
+            p{
+                color:#FF1949;
+                margin-bottom: 0;
+            }
+            h3{
+                color:#47334D;
+                padding:10px 0;
+                font-size: 22px;
+            }
+        }
+    }
+    form{
+        padding: 40px 20px 0 0;
+        @media(max-width:991px){
+            padding:0;
+            margin-top:10px;
+        }
+        .name,.mail,.subject,.message{
+            margin:15px 0;
+        
+            overflow:hidden;
+            input,textarea{
+                border-radius: 25px;
+                width:100%;
+                padding:15px;
+                background:#EEEEEE;
+                border:2px solid #EEEEEE; 
+                outline:none;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    border:2px solid #FF1949;            
+                }
+            }
+        }
+        .message{
+            textarea{
+                height: 150px;
+                margin-top:12px;
+                border-radius: 15px;
+            }
+        }
+    button{
+        font-weight: 700;
+        position: relative;
+        background:#FF1949;
+        color:#fff;
+        text-transform: capitalize;
+        padding: 14px 34px;
+        margin-top:20px;
+        border-radius: 5px;
+        font-size: 18px;
+        border: 1px solid transparent;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background:#273C5D;
+        }
+        i{
+            position: relative;
+            top:4px;
+            right:5px;
+            font-size: 22px;
+        }
+
+    }
+    }
+}
+/**************************************** end form *****************/
+
+
+/**************************************** start footer *****************/
+@import '../css/extends/footer';
+/**************************************** end footer *****************/

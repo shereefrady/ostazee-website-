@@ -1,0 +1,462 @@
+
+
+//rsest body
+@import 'extends/reset';
+/**************************************** start navbar *****************/
+@import 'extends/nav';
+/**************************************** end navbar *****************/
+
+
+
+/**************************************** start header  *****************/
+header{
+    background:url('../imgs/header/2.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    @media(max-width:767px){
+        height: 80vh;
+    }
+    .overlay{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background:#3c4e6d8c;
+    }
+    .info{
+        text-align: center;
+        position: relative;
+        z-index: 9;
+        color:#fff;
+        padding-top:150px;
+        h1{
+            margin: 15px auto 30px auto;
+            font-weight: bold;
+            width: 50%;
+            font-size: 53px;
+            margin-top:0;
+            margin-bottom: 0;
+            @media(max-width:1170px){
+                width:60%;
+            }
+            @media(max-width:992px){
+                font-size: 45px;
+            }
+            @media(max-width:830px){
+                font-size: 45px;
+                width:65%;
+            }
+            @media(max-width:767px){
+                font-size: 40px;
+                width:80%
+            }
+            @media(max-width:400px){
+                font-size: 40px;
+                width:95%
+            }
+        }
+    }
+}
+/**************************************** end header  *****************/
+
+
+
+/**************************************** start cards  *****************/
+.cards{
+    position: relative;
+    top:-110px;
+    @media(max-width:767px){
+        top:-70px;
+    }
+    .items{
+        .col{
+            @media(max-width:767px){
+                padding:5px;
+            }
+        }
+        .item{
+            padding:40px 0;
+            align-items: center;
+            transition: .3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: all .3s ease-in-out;
+            box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
+            &:hover{
+                transform: translate(0,-10px);
+                border-radius:0;
+            }
+            a{
+                color:#fff;
+                text-decoration:none;
+                div{
+                    margin-bottom:20px;
+                    i{
+                        font-size:55px;
+                    }
+                }
+                p{
+                    font-size:20px;
+                }
+            }
+            @media(max-width: 767px){
+                padding:10px 0;
+                a{
+                    div{
+                        margin-bottom:20px;
+                        i{
+                            font-size:25px;
+                        }
+                    }
+                    h4{
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size:16px;
+                    }
+                }
+            }
+        }
+        .item_1{ background:#f50;}
+        .item-2{background:#EAB830}
+        .item-3{background:#FF1949}
+    }
+    
+}
+/**************************************** end cards    *****************/
+
+
+
+/**************************************** start courses    *****************/
+.courses{
+    height: 830px;
+    overflow: hidden;
+    .line{
+        width:40px;
+        height:2px;
+        margin:0 auto;
+        background: #FF1949;
+    }
+    .head{
+        margin: 40px 0;
+        ul{ 
+            list-style:none;
+            padding:0;
+            margin:0;
+            display: flex;
+            justify-content: center;
+            li{
+                margin:0 10px;
+                a{
+                    text-decoration:none;
+                    cursor: pointer;
+                    padding:8px 25px;
+                    font-size:18px;
+                    @media(max-width:767px){
+                        padding:8px;
+                    }
+                    &:hover{
+                        background:#FF1949;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+    .active_link{
+        background:#FF1949;
+        color:#fff !important;
+        padding:8px 25px;
+    }
+    //start slider 
+    .slider{
+        margin-top:50px;
+        .item{
+            border: 1px solid #e2f4ff;
+            background: #fff;
+            transition: .4s;
+            position: relative;
+            margin: 10px;
+            &:hover{
+                box-shadow: 0 0 7px 1px #e2f4ff;
+            }
+            .title{
+                position: absolute;
+                top:20px;
+                right:20px;
+                padding:7px 12px;
+                background:#fff;
+                color:#555;
+                border-radius:5px;
+                z-index:99;
+                font-size:17px;
+            }
+            .cont_img{
+                width:100%;
+                height: 233px;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+            .salary_content{
+                text-align: left;
+                padding:20px;
+                .price{
+                    .rel{
+                        color:#FF1949;
+                        font-size:25px;
+                        padding-right:10px;
+                    }
+                    .del{
+                        text-decoration: line-through;
+                        color: #727695;
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                }
+                .desc{
+                    a{
+                        text-decoration:none;
+                        font-size:19px;
+                        font-weight: bold;
+                        color:#07294D;
+                        &:hover{
+                            color:#FF1949;
+                        }
+                    }
+                }
+                .rating{
+                    margin:10px 0;
+                    span{
+                        padding:0 10px;
+                    }
+                    a{
+                        color:#F2B827;
+                    }
+                }
+                .lead{
+                    color:#535E6B;
+                    font-size:15px;
+                }
+                .foot{
+                    display: flex;
+                    border-top: 1px solid #e2f4ff;
+                    padding-top: 15px;
+                    margin-top: 30px;
+                    justify-content: space-between;
+                    .btn{
+                        a{
+                            text-decoration:none;
+                            padding: 16px 30px;
+                            border-radius: 5px;
+                            font-size: 17px;
+                            border: 1px solid transparent;
+                            -webkit-transform: translateY(0px);
+                            transform: translateY(0px);
+                            transition: all 0.3s ease-in-out;
+                            background:#385777;
+                            color:#fff;
+                            &:hover{
+                                background: #FF1949;
+                            }
+                        }
+                    }
+                    .status{
+                        padding-top:15px;
+                        i{
+                            padding-left:5px;
+                            color:#FF1949;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //end slider
+}
+/**************************************** end courses    *****************/
+
+
+
+/****************************************  start teachers *****************/
+.teachers{
+    margin-top:70px;
+    padding:100px 0;
+    background:#EEF1EF;
+    overflow: hidden;
+    .line{
+        width:60px;
+        height:2px;
+        margin:0 auto 50px auto;
+        background: #FF1949;    
+    }
+    .item{
+        text-align: center;
+        background: #fff;
+        padding:25px 25px 5px 25px;
+        margin:15px 15px 30px 15px;
+        transition: .4s;
+        &:hover{
+            box-shadow: 0 0 7px 2px #e2f4ff;
+            .item_body{
+                .social{
+                    display:flex;
+                }
+            }
+            
+        }
+        &:hover{
+            .item_body{
+                transform: translate(0, -20px);
+            }
+        }
+        .item_body{
+            transition: all .4s ease-in-out;
+            margin:0 auto;
+            .cont_img{
+                width:150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin:15px auto;
+                @media(max-width:992px){
+                    width:180px;
+                    height:180px;
+                }
+                img{
+                    width:100%;
+                    height: 100%;;
+                }
+            }
+            h2{
+                color:#07294D;
+            }
+            p{
+                color:#FF1949;
+            }
+            .social{
+                margin-top:20px;
+                padding:0;
+                display:flex;
+                display:none;
+                justify-content: space-between;
+                a{  
+                    display:inline-block;
+                    margin:0 10px;
+                    border-radius:50%;
+                    width:35px;
+                    height:35px;
+                    text-align-last: center;
+                    line-height: 37px;
+                    transition: all .5s ease-in-out;
+                    &:hover{
+                        background:#FF1949;
+                    }
+                    i{
+                        color:#fff;
+                    }
+                }
+                .face{
+                    background:#222;
+                }
+                .twitter{
+                    background:#1da1f2;
+                }
+                .linkd{
+                    background:#0077b5;
+                }
+            }
+        }
+    }
+}
+/**************************************** end teachers    *****************/
+
+
+/**************************************** start about us    *****************/
+.about_us{
+    padding:80px 0;
+    margin-top:80px;
+    .line{
+        width:60px;
+        height:2px;
+        margin:0 auto 70px auto;
+        background: #FF1949;
+        
+    }
+    .item{
+        margin:10px 10px 25px 10px;
+        .info{
+            background: #222222;
+            border-radius: 14px;
+            border-top:3px solid #FF1949;
+            position: relative;
+            padding: 30px;
+            text-align: right;
+            &::after{
+                content:'';
+                position: absolute;
+                bottom: -19px;
+                color: #f50;
+                right: 36px;
+                border-left:20px solid transparent;
+                border-right:20px solid transparent;
+                border-top:20px solid #222222;
+            }
+            p{
+                margin-bottom: 25px;
+                position: relative;
+                color:#fff;
+            }
+            .rating{
+                margin-top:0;
+                a{
+                    color:#EAB830;
+                }
+            }
+        }
+        .developer{
+            display:flex;
+            margin-top:40px;
+            padding-right: 17px;
+            .cont_img{
+                width:90px;
+                height: 90px;
+                border-radius:50%;
+                overflow: hidden;
+                margin-left:10px;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+            .dev_info{
+                padding:20px 10px 0 0 ;
+                text-align: right;
+                h2{
+                    color:#07294D;
+                    margin-bottom:0;
+                }
+                p{
+                    margin-top:0;
+                    color:#FF1949;
+                }
+            }
+        }
+    }
+    
+}
+/**************************************** end about us    *****************/
+
+
+
+/**************************************** start footer    *****************/
+@import 'extends/footer';
+/**************************************** end footer    *****************/
+
+
+

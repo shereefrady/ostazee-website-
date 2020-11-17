@@ -1,0 +1,15 @@
+/* start colors */
+/* end colors */
+/* start float */
+/* end float */
+/*start text*/
+/*end text */
+/*start classes*/
+@media (max-width: 767px) {
+  .text_xs_center {
+    text-align: center;
+  }
+}
+
+/*end classes*/
+/*# sourceMappingURL=vars.css.map */
